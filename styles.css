@@ -1,0 +1,191 @@
+/* --- Paleta de Colores --- */
+/* Fondo Oscuro: #1A1A1D */
+/* Verde Neón: #39FF14 */
+/* Azul Eléctrico: #00BFFF */
+/* Texto Claro: #F5F5F5 */
+
+:root {
+    --bg-dark: #1A1A1D;
+    --text-light: #F5F5F5;
+    --neon-green: #39FF14;
+    --electric-blue: #00BFFF;
+}
+
+/* --- Reseteo Básico y Tipografía --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.bg-dark {
+    background-color: #2c2c31; /* Un tono ligeramente diferente para contraste */
+}
+
+/* --- Navegación y Héroe --- */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-light);
+}
+
+.logo strong {
+    color: var(--neon-green);
+}
+
+nav a {
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: var(--electric-blue);
+}
+
+.hero-section {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(26, 26, 29, 0.8), rgba(26, 26, 29, 0.9)), url('your-background-image.jpg') no-repeat center center/cover;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: var(--neon-green);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* --- Botones CTA --- */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.primary-cta {
+    background-color: var(--electric-blue);
+    color: var(--bg-dark);
+}
+
+.primary-cta:hover {
+    background-color: #0099cc;
+    transform: translateY(-2px);
+}
+
+.nav-cta {
+    background-color: var(--neon-green);
+    color: var(--bg-dark);
+}
+
+/* --- Secciones Generales --- */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--electric-blue);
+}
+
+/* --- Servicios Grid --- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: var(--bg-dark);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--neon-green);
+    text-align: center;
+}
+
+.service-card h3 {
+    color: var(--neon-green);
+    margin-bottom: 10px;
+}
+
+/* --- Testimonios --- */
+.testimonial-card {
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+    border-left: 4px solid var(--neon-green);
+    padding-left: 20px;
+}
+
+.testimonial-card cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* --- Formulario de Contacto --- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid var(--electric-blue);
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #0d0d0f;
+    font-size: 0.8rem;
+}
