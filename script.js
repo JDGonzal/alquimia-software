@@ -28,3 +28,20 @@ if (menuToggle && navMenu) {
         navMenu.classList.toggle('active');
     });
 }
+
+    // 3. Mostrar / Ocultar texto del CTA adicional
+    const miBoton = document.getElementById('miBoton');
+    const miTexto = document.getElementById('miTexto');
+
+    if (miBoton && miTexto) {
+        miBoton.addEventListener('click', () => {
+
+            if (miTexto.style.display === 'none' || miTexto.style.display === '') {
+                miTexto.style.display = 'block';
+                miBoton.textContent = 'Ocultar texto';
+            } else {
+                miTexto.style.display = 'none';
+                miBoton.textContent = 'Mostrar texto';
+            }
+        });
+    }
